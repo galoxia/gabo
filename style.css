@@ -1,0 +1,53 @@
+/*
+Theme Name: WP Challenge
+Theme URI: 
+Author: Oscar Zamora Galocha
+Author URI: 
+Description: Tema hijo creado para el challenge de Wordpress
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wpchallenge
+Template: twentysixteen
+Tags: one-column
+*/
+
+*, 
+*:after, 
+*:before {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	background: white;
+}
+
+h1 {
+	font-size: 6rem;
+}
+
+.output {
+	font-size: 4rem;
+}
+
+.output .result {
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
