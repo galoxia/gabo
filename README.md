@@ -1,2 +1,1 @@
-# gabo
-Challenge Wordpress
+# Challenge Wordpress
