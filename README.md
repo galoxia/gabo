@@ -5,13 +5,24 @@
 La función devuelve true si el número pasado como argumento es primo; false en caso contrario. Me baso en la definición de número primo como *"aquel que solo es divisible por 1 y por sí mismo"*, es decir, que tiene únicamente 2 divisores:
 
 ```PHP
-function isPrime($num) {
-	$dividers = 0;
-	for($n = 1; $n <= $num && $dividers <= 2; $n++){
-		if($num % $n === 0)
-			$dividers++;
+function nextPrime($num) {
+	$isPrime = false;
+	$next = $num + 1;
+	while( ! $isPrime ) {
+		// Ver cuantos divisores tiene $next
+		$dividers = 0;
+		for($n = 1; $n <= $next && $dividers <= 2; $n++) {
+			if($next % $n === 0){
+				$dividers++;
+			}
+		}
+		// Si tiene 2 divisores exactamente
+		if( 2 === $dividers )
+			$isPrime = true; // Es primo
+		else
+			$next++; // Si no probamos con el siguiente entero
 	}
-	return $dividers === 2? true : false;
+	return $next;
 }
 ```
 
