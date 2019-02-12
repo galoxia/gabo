@@ -2,7 +2,7 @@
 
 ## Ejercicio de Algoritmia
 
-La función devuelve true si el número pasado como argumento es primo; false en caso contrario. Me baso en la definición de número primo como *"aquel que solo es divisible por 1 y por sí mismo"*, es decir, que tiene únicamente 2 divisores:
+La función devuelve el siguiente número primo al pasado como parámetro. Me baso en la definición de número primo como *"aquel que solo es divisible por 1 y por sí mismo"*, es decir, que tiene únicamente 2 divisores:
 
 ```PHP
 function nextPrime($num) {
